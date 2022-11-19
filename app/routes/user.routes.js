@@ -24,4 +24,6 @@ module.exports = function (app) {
   );
 
   app.get("/api/getUser/:id", controller.findOne);
+
+  app.get("/api/getUsers", controller.findAll);
 };
